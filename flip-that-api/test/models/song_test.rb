@@ -15,6 +15,7 @@ class SongTest < ActiveSupport::TestCase
   end
 
   def test_song_should_have_artist
+    new_song = Song.new
     assert new_song.artist != true
   end
 
@@ -22,6 +23,11 @@ class SongTest < ActiveSupport::TestCase
   end
 
   def test_song_should_have_url
+    new_song = Song.new
+    assert new_song.url != true
+  end
+  
+
   end
 
 end
